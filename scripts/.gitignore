@@ -1,0 +1,25 @@
+# Ignore service account key files
+service-account-key.json
+*-service-account-key.json
+*-firebase-adminsdk-*.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variable files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

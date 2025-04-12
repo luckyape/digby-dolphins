@@ -1,0 +1,407 @@
+{
+  "introduction": {
+    "title": "Athlete Zone",
+    "description": "This protected area is designed specifically for swimmers and parents to access resources, training materials, and team updates."
+  },
+  "sections": [
+    {
+      "id": "technique",
+      "title": "Technique & Training Videos",
+      "description": "Watch instructional videos on proper swimming technique for all four strokes.",
+      "link": "/athlete-zone/technique"
+    },
+    {
+      "id": "dryland",
+      "title": "Dryland Exercises",
+      "description": "Strengthen your swimming with these out-of-pool exercises designed for swimmers.",
+      "link": "/athlete-zone/dryland"
+    },
+    {
+      "id": "best-times",
+      "title": "Personal Best Times",
+      "description": "Track your personal best times and set goals to improve your performance.",
+      "link": "/athlete-zone/best-times"
+    },
+    {
+      "id": "strategy",
+      "title": "Event Strategy & Time Goals",
+      "description": "Learn race strategies and set personal time goals for your events.",
+      "link": "/athlete-zone/strategy"
+    },
+    {
+      "id": "swimmer-of-week",
+      "title": "Swimmer of the Week",
+      "description": "See who's been recognized for outstanding performance and sportsmanship.",
+      "link": "/athlete-zone/swimmer-of-week"
+    },
+    {
+      "id": "team-cheer",
+      "title": "Team Cheer & Photos",
+      "description": "Team chants, cheers, and photo gallery from meets and team events.",
+      "link": "/athlete-zone/team-cheer"
+    }
+  ],
+  "swimmerOfWeek": {
+    "current": {
+      "id": 1,
+      "name": "Emma Johnson",
+      "age": 12,
+      "group": "Intermediate",
+      "achievements": "Personal best in 50m freestyle, 100m butterfly, and 200m IM",
+      "quote": "I love swimming because it makes me feel strong and free!",
+      "coach_comment": "Emma has shown incredible dedication this season. Her technique improvements in butterfly have been remarkable."
+    },
+    "previous": [
+      {
+        "id": 2,
+        "name": "Michael Chen",
+        "age": 14,
+        "group": "Senior",
+        "achievements": "Qualified for State Championships in 100m breaststroke",
+        "quote": "Swimming has taught me that hard work and consistency pay off.",
+        "coach_comment": "Michael's work ethic is outstanding. He's always the first one in and the last one out of practice."
+      },
+      {
+        "id": 3,
+        "name": "Sophia Rodriguez",
+        "age": 10,
+        "group": "Junior",
+        "achievements": "First competitive meet with no disqualifications in all four strokes",
+        "quote": "I was nervous but my teammates helped me feel brave!",
+        "coach_comment": "Sophia has overcome her fear of diving and is now one of our most enthusiastic swimmers."
+      }
+    ]
+  },
+  "technique": {
+    "title": "Technique & Training Videos",
+    "description": "Proper technique is essential for swimming efficiency and speed. Watch these instructional videos to improve your strokes.",
+    "videos": [
+      {
+        "id": 1,
+        "title": "Freestyle Technique Fundamentals",
+        "description": "Learn the key elements of an efficient freestyle stroke, including body position, arm pull, kick, and breathing.",
+        "url": "https://www.youtube.com/embed/5HLW2AI1Ink",
+        "thumbnail": "/images/freestyle-thumb.svg",
+        "coach_tips": [
+          "Focus on a steady six-beat kick",
+          "Keep your head still - look at the bottom of the pool",
+          "Roll your body along the long axis",
+          "Reach forward with each stroke"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Backstroke Technique Breakdown",
+        "description": "Master the backstroke with proper body position, arm movement, and kick technique.",
+        "url": "https://www.youtube.com/embed/uiI6Z_0Q2Io",
+        "thumbnail": "/images/backstroke-thumb.svg",
+        "coach_tips": [
+          "Keep your head still with ears in the water",
+          "Maintain a steady kick from the hips",
+          "Enter the water with your pinky finger first",
+          "Focus on body rotation"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Breaststroke: Timing is Everything",
+        "description": "Learn the proper timing of the pull, kick, and glide phases of breaststroke.",
+        "url": "https://www.youtube.com/embed/QGZ8rIy-YtI",
+        "thumbnail": "/images/breaststroke-thumb.svg",
+        "coach_tips": [
+          "Pull, breathe, kick, glide",
+          "Keep your kick narrow",
+          "Shoot forward in your glide",
+          "Don't lift your head too high"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Butterfly Made Simple",
+        "description": "Break down the butterfly stroke into manageable components to build a strong, efficient technique.",
+        "url": "https://www.youtube.com/embed/jd67PMryIT0",
+        "thumbnail": "/images/butterfly-thumb.svg",
+        "coach_tips": [
+          "Drive your chest forward and down",
+          "Kick twice for every arm cycle",
+          "Keep your recovery low and relaxed",
+          "Breathe forward, not up"
+        ]
+      }
+    ]
+  },
+  "dryland": {
+    "title": "Dryland Training Program",
+    "description": "Strengthen your swimming performance with these out-of-pool exercises designed specifically for swimmers.",
+    "introduction": "Dryland training is an essential component of swim training that helps build strength, power, and flexibility. These exercises complement your in-water training and can help prevent injuries.",
+    "workouts": [
+      {
+        "id": 1,
+        "title": "Core Strength Routine",
+        "description": "A strong core is essential for maintaining proper body position in the water.",
+        "duration": "15-20 minutes",
+        "frequency": "3 times per week",
+        "exercises": [
+          {
+            "name": "Plank",
+            "description": "Hold a straight-arm plank position",
+            "sets": 3,
+            "duration": "30-60 seconds",
+            "rest": "30 seconds between sets"
+          },
+          {
+            "name": "Russian Twists",
+            "description": "Seated with knees bent, twist torso side to side",
+            "sets": 3,
+            "reps": "20 (10 each side)",
+            "rest": "30 seconds between sets"
+          },
+          {
+            "name": "Superman",
+            "description": "Lie face down, lift arms and legs simultaneously",
+            "sets": 3,
+            "reps": 12,
+            "rest": "30 seconds between sets"
+          },
+          {
+            "name": "Flutter Kicks",
+            "description": "Lie on back, legs extended, alternate small kicks",
+            "sets": 3,
+            "duration": "30 seconds",
+            "rest": "30 seconds between sets"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Upper Body Strength",
+        "description": "Build pulling power for stronger strokes.",
+        "duration": "20-25 minutes",
+        "frequency": "2-3 times per week",
+        "exercises": [
+          {
+            "name": "Push-Ups",
+            "description": "Standard or modified push-ups",
+            "sets": 3,
+            "reps": "10-15",
+            "rest": "45 seconds between sets"
+          },
+          {
+            "name": "Resistance Band Pulls",
+            "description": "Mimic swimming pull pattern with resistance band",
+            "sets": 3,
+            "reps": "15 each arm",
+            "rest": "45 seconds between sets"
+          },
+          {
+            "name": "Tricep Dips",
+            "description": "Using a chair or bench",
+            "sets": 3,
+            "reps": "10-12",
+            "rest": "45 seconds between sets"
+          },
+          {
+            "name": "Shoulder External Rotation",
+            "description": "With resistance band for rotator cuff strength",
+            "sets": 3,
+            "reps": "12 each side",
+            "rest": "30 seconds between sets"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Flexibility Routine",
+        "description": "Improve range of motion for more efficient strokes.",
+        "duration": "15 minutes",
+        "frequency": "Daily",
+        "exercises": [
+          {
+            "name": "Shoulder Stretch",
+            "description": "Cross-body and overhead stretches",
+            "duration": "30 seconds each position",
+            "reps": 2
+          },
+          {
+            "name": "Ankle Flexibility",
+            "description": "Pointed toe and flexed foot positions",
+            "duration": "30 seconds each position",
+            "reps": 2
+          },
+          {
+            "name": "Hip Flexor Stretch",
+            "description": "Lunge position with back knee on ground",
+            "duration": "30 seconds each side",
+            "reps": 2
+          },
+          {
+            "name": "Butterfly Stretch",
+            "description": "Seated with soles of feet together",
+            "duration": "45 seconds",
+            "reps": 2
+          }
+        ]
+      }
+    ]
+  },
+  "strategy": {
+    "title": "Event Strategy & Time Goals",
+    "description": "Learn race strategies and set personal time goals for your events.",
+    "events": [
+      {
+        "id": 1,
+        "title": "50m Freestyle Strategy",
+        "description": "The 50m freestyle is all about explosive power and maintaining maximum speed from start to finish.",
+        "ageGroups": [
+          {
+            "group": "10 & Under",
+            "strategy": [
+              "Focus on a strong start with a good streamline",
+              "Kick hard the entire race",
+              "Breathe only 1-2 times during the race",
+              "Finish strong with a big kick"
+            ],
+            "timeGoals": {
+              "beginner": "45-55 seconds",
+              "intermediate": "35-45 seconds",
+              "advanced": "30-35 seconds"
+            }
+          },
+          {
+            "group": "11-12",
+            "strategy": [
+              "Powerful start with a tight streamline",
+              "Fast turnover with strong kicks",
+              "Limit breathing to once every 4-6 strokes",
+              "Sprint finish with head down"
+            ],
+            "timeGoals": {
+              "beginner": "38-45 seconds",
+              "intermediate": "32-38 seconds",
+              "advanced": "28-32 seconds"
+            }
+          },
+          {
+            "group": "13-14",
+            "strategy": [
+              "Explosive start with deep streamline",
+              "High elbow recovery with powerful pull",
+              "Minimal breathing (1-2 breaths total)",
+              "Strong finish without breathing last 5 meters"
+            ],
+            "timeGoals": {
+              "beginner": "35-40 seconds",
+              "intermediate": "30-35 seconds",
+              "advanced": "26-30 seconds"
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "100m Freestyle Strategy",
+        "description": "The 100m freestyle requires a balance of speed and endurance with strategic pacing.",
+        "ageGroups": [
+          {
+            "group": "10 & Under",
+            "strategy": [
+              "Strong start but don't sprint all-out",
+              "Establish rhythm in first 25m",
+              "Build speed in the middle 50m",
+              "Finish with everything you have"
+            ],
+            "timeGoals": {
+              "beginner": "1:40-2:00",
+              "intermediate": "1:25-1:40",
+              "advanced": "1:10-1:25"
+            }
+          },
+          {
+            "group": "11-12",
+            "strategy": [
+              "Fast but controlled first 25m",
+              "Maintain strong technique in middle 50m",
+              "Increase kick on final 25m",
+              "Sprint finish with head down"
+            ],
+            "timeGoals": {
+              "beginner": "1:25-1:40",
+              "intermediate": "1:15-1:25",
+              "advanced": "1:05-1:15"
+            }
+          },
+          {
+            "group": "13-14",
+            "strategy": [
+              "Strong start with good breakout",
+              "Build to race pace by 15m",
+              "Hold technique through middle 50m",
+              "Increase turnover and kick for final 25m"
+            ],
+            "timeGoals": {
+              "beginner": "1:15-1:30",
+              "intermediate": "1:05-1:15",
+              "advanced": "0:58-1:05"
+            }
+          }
+        ]
+      }
+    ],
+    "timeTracker": {
+      "title": "Personal Best Time Tracker",
+      "description": "Use this tracker to record your times and see your improvement throughout the season.",
+      "instructions": [
+        "Record the date, meet name, and your time for each event",
+        "Note any specific feedback from coaches",
+        "Set a goal time for your next meet",
+        "Track your progress over time"
+      ],
+      "sampleEvents": [
+        "50m Freestyle",
+        "100m Freestyle",
+        "50m Backstroke",
+        "100m Backstroke",
+        "50m Breaststroke",
+        "100m Breaststroke",
+        "50m Butterfly",
+        "100m Butterfly",
+        "100m Individual Medley",
+        "200m Individual Medley"
+      ]
+    }
+  },
+  "bestTimes": {
+    "title": "Personal Best Times Tracker",
+    "description": "Track your swimming progress by recording your personal best times and setting goals for improvement.",
+    "introduction": "Recording your personal best times helps you track your progress and set realistic goals. Use this tracker to celebrate your achievements and visualize your improvement over time.",
+    "commonEvents": [
+      {
+        "stroke": "Freestyle",
+        "distances": ["50m", "100m", "200m", "400m", "800m", "1500m"]
+      },
+      {
+        "stroke": "Backstroke",
+        "distances": ["50m", "100m", "200m"]
+      },
+      {
+        "stroke": "Breaststroke",
+        "distances": ["50m", "100m", "200m"]
+      },
+      {
+        "stroke": "Butterfly",
+        "distances": ["50m", "100m", "200m"]
+      },
+      {
+        "stroke": "Individual Medley",
+        "distances": ["200m", "400m"]
+      }
+    ],
+    "tips": [
+      "Set realistic but challenging goals",
+      "Focus on technique improvements, not just time",
+      "Celebrate every achievement, no matter how small",
+      "Track your progress over time to stay motivated",
+      "Work with your coach to identify areas for improvement"
+    ]
+  }
+}

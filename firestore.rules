@@ -1,0 +1,104 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    function hasAthleteAccess() {
+      return isAuthenticated() &&
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'athlete' ||
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'supporter');
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Allow Cloud Functions to access all collections
+    function isCloudFunction() {
+      return request.auth.token.firebase.sign_in_provider == 'google.com' &&
+             request.auth.token.firebase.sign_in_attributes.email.matches('.*@appspot.gserviceaccount.com');
+    }
+
+    // Public collections - anyone can read
+    match /news/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    match /categories/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    match /archives/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    match /events/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    match /eventCategories/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    // Settings collection
+    match /settings/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    // Splash content
+    match /splashContent/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    // Contact form submissions
+    match /contactSubmissions/{document=**} {
+      allow create: if true; // Anyone can submit the contact form
+      allow read, update, delete: if isAdmin() || isCloudFunction();
+    }
+
+    // User profiles
+    match /users/{userId} {
+      // Users can read their own profile
+      // Admins can read all profiles
+      allow read: if isOwner(userId) || isAdmin();
+
+      // Users can create and update their own profile
+      // Admins can create and update any profile
+      allow create, update: if isOwner(userId) || isAdmin() || isCloudFunction();
+
+      // Only admins can delete profiles
+      allow delete: if isAdmin();
+    }
+
+    // Invitations
+    match /invitations/{document=**} {
+      allow read: if isAdmin() || isCloudFunction();
+      allow write: if isAdmin() || isCloudFunction();
+    }
+
+    // Athlete zone content
+    match /athlete-content/{document=**} {
+      allow read: if hasAthleteAccess();
+      allow write: if isAdmin() || isCloudFunction();
+    }
+  }
+}
