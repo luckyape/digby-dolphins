@@ -40,8 +40,8 @@
     }
   },
   "hosting": {
-    "source": "dolphins-website",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "source": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "functions/**"],
     "frameworksBackend": {
       "region": "us-central1"
     }
